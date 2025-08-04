@@ -1,4 +1,4 @@
-# CS3_1stQtrPortfolio_Brandon
+# CS3_1stQtrPortfolio_Brandon Timothy P. Fernando
 
 ![Portfolio](https://wiztoonz.com/wp-content/uploads/2022/04/Blog-Post-Portfolio.jpg)
 

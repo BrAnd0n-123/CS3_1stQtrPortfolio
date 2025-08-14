@@ -4,29 +4,75 @@
     <title>Q1_1stNonGradedTask_MGFERNANDO</title>
   </head>
   <body>
-      <script>
         <h1>Feed Me My Snacks</h1>
 
-        <label> Enter your age  
-          <input> id="age" />
-        </label></br/>
+        <label> Enter your age:   </label>
+          <input id="age" /><br />
 
-        <label> Enter your Max age  
-          <input> id="maxAge" />
-        </label></br/>
+        <label> Enter your Max age:  </label>
+          <input id="maxAge" /> <br /> 
         
-        <label> Enter your nubmer of Snacks
-          <input> id="numPerDay" />
-        </label></br/>
+        <label> Enter your nubmer of Snacks: </label>
+          <input id="numPerDay" /> <br />
+        
+        <label> Enter the type of Snack: </label>
+        <input id="snackType" />  <br />
 
-        <p> Result :
-            <span id="resultHere"></span>
-        </p>
+        <p> Result : <span id="resultHere"> </span> </p>
 
-        <button> Accept Input </button>
+        <button onclick="func1()"> Accept Input </button>
 
-    <script src="script2.js>"> </script>
+    <script>
+        function func1(){
+          let age = document.getElementById("age").value;
+          let maxAge = document.getElementById("maxAge").value;
+          let numPerDay = document.getElementById("numPerDay").value;
 
-      </script>
+          let totalRequired = (Number(numPerDay) * 365) * (Number(maxAge) - Number(age));
+          
+          document.getElementById("resultHere").innerHTML = `You will need ${totalRequired} to last you until the ripe old age of ${maxAge}`;
+
+        }
+        
+    </script>
+  </body>
+</html>y>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>Q1_1stNonGradedTask_MGFERNANDO</title>
+  </head>
+  <body>
+        <h1>Feed Me My Snacks</h1>
+
+        <label> Enter your age:   </label>
+          <input id="age" /><br />
+
+        <label> Enter your Max age:  </label>
+          <input id="maxAge" /> <br /> 
+        
+        <label> Enter your nubmer of Snacks: </label>
+          <input id="numPerDay" /> <br />
+        
+        <label> Enter the type of Snack: </label>
+        <input id="snackType" />  <br />
+
+        <p> Result : <span id="resultHere"> </span> </p>
+
+        <button onclick="func1()"> Accept Input </button>
+
+    <script>
+        function func1(){
+          let age = document.getElementById("age").value;
+          let maxAge = document.getElementById("maxAge").value;
+          let numPerDay = document.getElementById("numPerDay").value;
+
+          let totalRequired = (Number(numPerDay) * 365) * (Number(maxAge) - Number(age));
+          
+          document.getElementById("resultHere").innerHTML = `You will need ${totalRequired} to last you until the ripe old age of ${maxAge}`;
+
+        }
+        
+    </script>
   </body>
 </html>
